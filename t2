@@ -1,0 +1,14 @@
+# 讀取輸入的隊伍總數
+n = int(input())
+
+# 初始化符合標準的隊伍總數為 0
+valid_teams = 0
+
+# 遍歷每一個隊伍
+for _ in range(n):
+    team_size = int(input())  # 讀取每個隊伍的人數
+    if team_size % 3 == 0 and team_size != 0:  # 檢查隊伍人數是否是 3 的倍數且不為 0
+        valid_teams += 1  # 如果符合條件，增加符合標準的隊伍總數
+
+# 輸出符合標準的隊伍總數
+print(valid_teams)
